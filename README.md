@@ -35,31 +35,31 @@ dsl(
 
 	RUN,
 
-	  `Example()`,
+		`Example()`,
 
-	  `# this is a comment`,
-	  `# Or an inside joke`,
-	  `# My voice does not have a Lispppft.`,
+		`# this is a comment`,
+		`# Or an inside joke`,
+		`# My voice does not have a Lispppft.`,
 
-	  `# Let's run the example procedure twice more`,
+		`# Let's run the example procedure twice more`,
 
-      `Example()`,
-	  `Example()`,
+		`Example()`,
+		`Example()`,
 
-	  `# Comment: it should therefore print the example 3 times total`,
+		`# Comment: it should therefore print the example 3 times total`,
 
-	  `# now let's call another example procedure`,
-	  `AnotherExample()`,
+		`# now let's call another example procedure`,
+		`AnotherExample()`,
 
-	   // but what about if we want to call some GoLang Code?
-	   // this calls someGoLangFunc() inside the DSL run section we are in
-	   callGo(someGoLangFunc),
-	   // there, we just mixed DSL code with Go Code calls
+		// but what about if we want to call some GoLang Code?
+		// this calls someGoLangFunc() inside the DSL run section we are in
+		callGo(someGoLangFunc),
+		// there, we just mixed DSL code with Go Code calls
 
-	  `# Now we're back to the DSL code again.. call the example one more time...`,
-	  `Example()`,
+		`# Now we're back to the DSL code again.. call the example one more time...`,
+		`Example()`,
 
-	 DONE,
+	DONE,
 
 
 dslFinished)
@@ -71,7 +71,7 @@ func main() {
 
 ```
 
-Warnings: 
-* avoid tricks like the plague  
-* DSL = drug specific language. 
+Warnings:
+* avoid tricks like the plague
+* DSL = drug specific language.
 * Lisp = troublesome
